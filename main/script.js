@@ -35,20 +35,6 @@ const blogPosts = [
     tag: "AI Systems",
     excerpt:
       "A placeholder draft on evaluating agent reliability in production-like environments and what metrics actually matter."
-  },
-  {
-    title: "What I Learned from Shipping Internal Developer Tooling",
-    date: "April 2026",
-    tag: "Engineering",
-    excerpt:
-      "A placeholder reflection on reducing workflow friction, aligning with user needs, and measuring impact after launch."
-  },
-  {
-    title: "From Research Questions to Product Decisions",
-    date: "March 2026",
-    tag: "Research",
-    excerpt:
-      "A placeholder post about translating experimental uncertainty into pragmatic decisions when building real systems."
   }
 ];
 
