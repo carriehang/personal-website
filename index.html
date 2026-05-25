@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kexin (Carrie) Hang</title>
+    <meta
+      name="description"
+      content="Personal website for Kexin (Carrie) Hang — product-minded builder, researcher, and creative technologist."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="nav-wrap">
+          <div class="accent-line" aria-hidden="true"></div>
+          <nav class="nav" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">home</a>
+            <a href="#about" class="nav-link">about</a>
+            <a href="#projects" class="nav-link">projects</a>
+            <a href="#contact" class="nav-link">contact</a>
+          </nav>
+        </div>
+      </aside>
+
+      <main class="content" id="home">
+        <section class="hero section">
+          <p class="eyebrow">hello, i’m</p>
+          <h1>
+            Kexin <span class="gradient">(Carrie)</span> Hang
+          </h1>
+          <p class="lead">
+            I build thoughtful digital experiences at the intersection of design,
+            technology, and storytelling.
+          </p>
+        </section>
+
+        <section id="about" class="section">
+          <h2>about</h2>
+          <p>
+            I’m a software engineer interested in building trustworthy AI systems 
+            and scalable infrastructure, with research experience applying machine 
+            learning to neuroscience.
+          </p>
+          <p>
+            Currently, I work at Stripe in San Francisco, focusing on developing AI agents to improve 
+            engineering productivity. Before joining the tech industry, I studied at 
+            Duke University and worked on research in the intersection of computer science 
+            and neuroscience. I enjoy solving problems across systems, machine learning, 
+            and human cognition. 
+          </p>
+        </section>
+
+        <section id="projects" class="section">
+          <h2>projects</h2>
+          <div id="project-list" class="project-list" aria-live="polite"></div>
+          <template id="project-card-template">
+            <article class="project-card">
+              <h3 class="project-title"></h3>
+              <p class="project-meta"></p>
+              <ul class="project-description"></ul>
+            </article>
+          </template>
+        </section>
+
+        <section id="contact" class="section">
+          <h2>contact</h2>
+          <p>
+            Want to connect or chat? Find me on
+            <a href="www.linkedin.com/in/kexin-hang-a03457293" target="_blank" rel="noreferrer">LinkedIn</a>.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <hr />
+      <p>© <span id="year"></span> Kexin (Carrie) Hang</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
