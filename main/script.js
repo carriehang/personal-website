@@ -28,6 +28,30 @@ const projects = [
   }
 ];
 
+const blogPosts = [
+  {
+    title: "Design Notes: Building Reliable AI Agents",
+    date: "May 2026",
+    tag: "AI Systems",
+    excerpt:
+      "A placeholder draft on evaluating agent reliability in production-like environments and what metrics actually matter."
+  },
+  {
+    title: "What I Learned from Shipping Internal Developer Tooling",
+    date: "April 2026",
+    tag: "Engineering",
+    excerpt:
+      "A placeholder reflection on reducing workflow friction, aligning with user needs, and measuring impact after launch."
+  },
+  {
+    title: "From Research Questions to Product Decisions",
+    date: "March 2026",
+    tag: "Research",
+    excerpt:
+      "A placeholder post about translating experimental uncertainty into pragmatic decisions when building real systems."
+  }
+];
+
 function renderProjects() {
   const container = document.getElementById("project-list");
   const template = document.getElementById("project-card-template");
@@ -46,6 +70,23 @@ function renderProjects() {
       li.textContent = item;
       list.appendChild(li);
     });
+
+    container.appendChild(card);
+  });
+}
+
+function renderBlogPosts() {
+  const container = document.getElementById("blog-list");
+  const template = document.getElementById("blog-card-template");
+  if (!container || !template) return;
+
+  container.replaceChildren();
+
+  blogPosts.forEach((post) => {
+    const card = template.content.cloneNode(true);
+    card.querySelector(".blog-title").textContent = post.title;
+    card.querySelector(".blog-meta").textContent = `${post.date} · ${post.tag}`;
+    card.querySelector(".blog-excerpt").textContent = post.excerpt;
 
     container.appendChild(card);
   });
@@ -85,6 +126,7 @@ function setupScrollSpy() {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
+  renderBlogPosts();
   setYear();
   setupScrollSpy();
 });

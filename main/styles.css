@@ -189,6 +189,53 @@ a {
   margin-bottom: 0;
 }
 
+.section-intro {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.blog-list {
+  display: grid;
+  gap: 12px;
+}
+
+.blog-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fcfdff;
+  padding: 16px;
+}
+
+.blog-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.blog-title {
+  margin: 6px 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.blog-excerpt {
+  margin: 0 0 10px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.blog-link {
+  font-size: 0.88rem;
+  text-decoration: none;
+  color: #5d6472;
+}
+
+.blog-link:hover {
+  color: #3760d2;
+}
+
 .footer {
   max-width: 1080px;
   width: 100%;
